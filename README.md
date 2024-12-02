@@ -62,8 +62,8 @@ The light bar on the DUALSHOCK 4 controller can cause distracting reflections on
 
      Ensure your controller is connected via USB or Bluetooth. Verify that it appears in your system's connected devices.
 
-2. **Run the Script**
 
+2. **Run the Script**
      Using npm:
 
      ```bash
@@ -77,6 +77,9 @@ The light bar on the DUALSHOCK 4 controller can cause distracting reflections on
      ```
 
     The script will attempt to find the controller and turn off its light bar. If the controller is not found, the script will list connected HID devices and provide instructions.
+
+    > **Note (especially for macOS Users):**
+    > You may need to run the script twice. The first run will change the light bar color from white to blue, and the second run will turn it off.
 
 ## Troubleshooting
 

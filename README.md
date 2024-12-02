@@ -23,7 +23,7 @@ The light bar on the DUALSHOCK 4 controller can cause distracting reflections on
 ## Prerequisites
 
 - **Node.js** (v12 or higher)
-- **npm** (Node Package Manager)
+- **npm** or **yarn**
 - **Operating Systems Supported:**
   - **macOS**
   - **Windows**
@@ -33,32 +33,48 @@ The light bar on the DUALSHOCK 4 controller can cause distracting reflections on
 
 1. **Clone the Repository**
 
-   ```bash
-   git clone https://github.com/ryanshahine/dualshock4-lightbar-off.git
-   cd dualshock4-lightbar-off
-   ```
+    ```bash
+    git clone https://github.com/ryanshahine/dualshock4-lightbar-off.git
+    cd dualshock4-lightbar-off
+    ```
 
 2. **Install Dependencies**
 
-    ```bash
-    npm install
-    ```
+     Using npm:
 
-    This will install the following packages:
-    - `node-hid`
-    - `crc`
+     ```bash
+     npm install
+     ```
+
+     Or using yarn:
+
+     ```bash
+     yarn install
+     ```
+
+     This will install the following packages:
+     - `node-hid`
+     - `crc`
 
 ## Usage
 
 1. **Connect Your DUALSHOCK 4 Controller**
 
-    Ensure your controller is connected via USB or Bluetooth. Verify that it appears in your system's connected devices.
+     Ensure your controller is connected via USB or Bluetooth. Verify that it appears in your system's connected devices.
 
 2. **Run the Script**
 
-    ```bash
-    node index.js
-    ```
+     Using npm:
+
+     ```bash
+     npm run start
+     ```
+
+     Or using yarn:
+
+     ```bash
+     yarn start
+     ```
 
     The script will attempt to find the controller and turn off its light bar. If the controller is not found, the script will list connected HID devices and provide instructions.
 
